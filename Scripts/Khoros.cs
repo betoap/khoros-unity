@@ -92,7 +92,7 @@ public class Khoros : MonoBehaviour {
 	// Sing broadcasts data.
 	
 	public static void Sing(string song, JSONObject data) {
-		if (!string.IsNullOrEmpty(Instance.listenRoom)) {
+		if (!string.IsNullOrEmpty(Instance.singRoom)) {
 			JSONObject khorosObject = new JSONObject();
 			khorosObject.AddField("room", Instance.singRoom);		
 			data.AddField("khoros", khorosObject);		
